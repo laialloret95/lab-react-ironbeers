@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-import SearchBeer from './searchBeer'
+import SearchBeer from './SearchBeer'
 
 class Beers extends Component {
     constructor(props) {
@@ -31,7 +31,6 @@ class Beers extends Component {
                 this.setState({
                     beers: beersSearch
                 })
-                console.log(this.state.beers)
             })
             .catch(e => console.log(e))
     }
