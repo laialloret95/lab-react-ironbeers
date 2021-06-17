@@ -3,7 +3,7 @@ import 'bulma/css/bulma.css';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import { Link, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Beers from './components/Beers';
 import RandomBeer from './components/RandomBeer';
 import NewBeer from './components/NewBeer';
