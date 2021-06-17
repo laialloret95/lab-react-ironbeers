@@ -15,7 +15,6 @@ class Beers extends Component {
         axios
             .get(`https://ih-beers-api2.herokuapp.com/beers`)
             .then( response => {
-                console.log(response.data)
                 this.setState({
                     beers: response.data,
                     status: 'loaded'
@@ -31,10 +30,13 @@ class Beers extends Component {
                {status === 'loaded' && beers.map(beer => {
                    return(
                     <div key={beer._id} className="single-beer-container">
-                        <img src={beer.image_url} alt="bee" />
+                        <div className="single-beer-img">
+                            <img className="beer" src={beer.image_url} alt="bee" />
+                        </div>
                         <div className="single-beer-content">
                             <h1>{beer.name}</h1>
                             <p>{beer.tagline}</p>
+                            <p> <strong>Created by</strong> {beer.contributed_by.substring(0, beer.contributed_by.indexOf('<'))}</p>
                         </div>
                     </div>
                    )

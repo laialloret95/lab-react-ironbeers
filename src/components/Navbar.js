@@ -5,21 +5,10 @@ class Navbar extends Component {
     render() {
         return(
 
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-                <a className="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="bulma logo"/>
-                </a>
-            </div>
-
-
-        <div id="navbarBasicExample" className="navbar-menu">
-            <div className="navbar-start">
-                <Link className="navbar-item" to="/beers">Beers</Link>
-                <Link className="navbar-item" to="/random-beer">Random Beers</Link>
-                <Link className="navbar-item" to="/new-beer">New Beer</Link>
-            </div>
-        </div>
+        <nav className="navbar-home" >
+                <Link  className="navbar-home" to="/">
+                    <img className = "home" src="https://static.thenounproject.com/png/4932-200.png" alt="home" />
+                </Link>
         </nav>
 
         )
