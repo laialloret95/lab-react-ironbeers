@@ -6,6 +6,7 @@ import Home from './components/Home';
 import { Link, Route, Switch } from 'react-router-dom'
 import Beers from './components/Beers';
 import RandomBeer from './components/RandomBeer';
+import NewBeer from './components/NewBeer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route path="/beers" component={Beers} />
         <Route path="/random-beer" component={RandomBeer} />
+        <Route path="/new-beer" component={NewBeer} />
         <Route path="/" component={Home} />
       </Switch>
     </div>
